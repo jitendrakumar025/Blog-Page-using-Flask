@@ -1,0 +1,21 @@
+{
+  "params":
+  {
+    "local_server":"True",
+    "local_uri": "mysql://root:@localhost/iBlogger",
+    "prod_uri": "mysql://root:@localhost/iBlogger",
+    "tag_line": "Iconic blogger here",
+    "web_name": "iBlogger",
+    "yr_one": "2021",
+    "yr_two": "2022",
+    "mail_user": "jitendra.bunkar@kgpian.iitkgp.ac.in",
+    "mail_pass": "Jitendra@iitian25",
+    "author": "Mr.Jitendra",
+    "no_of_posts": 3,
+    "admin_email": "abc@xyz85gmail.com",
+    "admin_pass": "Welcome@25",
+    "upload_location": "C:\\Users\\ASUS\\PycharmProjects\\Web-Development-Using-Flask\\static"
+
+}
+
+}

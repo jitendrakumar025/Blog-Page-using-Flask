@@ -1,0 +1,27 @@
+body{
+    overflow: auto;
+}
+.form-box input ,#msg{
+    width: 34vw;
+    border: 2px solid #9d9a94;
+    padding: 13px 0px;
+    margin: 4px;
+    font-family: var(--font3);
+    border-radius: 10px;
+}
+.btns{
+    width: 23vw;
+}
+.contact-box{
+    background-image: url(../img/img1.jpg);
+    opacity: 0.9;
+    margin-top: 23px;
+    font-family: var(--font3);
+    height: 82vh;
+}
+.contact-box h2{
+    color: wheat;
+}
+  
+
+

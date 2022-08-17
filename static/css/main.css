@@ -1,0 +1,116 @@
+
+*{
+    margin: 0;
+    padding: 0%;
+}
+
+.navbar{
+    display: flex;
+    padding:8px;
+    justify-content:space-around;
+    align-items: center;
+    background-color: rgb(168, 162, 162);
+}
+.left-nav img{
+    height: 50px;
+}
+.left-nav ul,.left-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+nav li{
+    margin-left: 23px;
+    list-style: none;
+}
+nav ul li a{
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    font-style: 'Baloo Bhaijaan 2', cursive;
+    text-decoration: none;
+    border-radius: 10px;
+}
+nav ul li a:hover{
+    text-decoration: none;
+    background-color: black;
+    transition: all .3s ease-in;
+
+}
+.right-nav input{
+    font-style: var(--font2);
+    padding: 5px;
+    border: none;
+    border-radius: 9px;
+}
+.float-right{
+    float: right;
+}
+.right-nav button ,.btns{
+    border: none;
+    cursor: pointer;
+    background-color: var(--btn-color);
+    padding: 4px 8px;
+    color: white;
+    border-radius: 7px;
+}
+.right-nav button:hover{
+    background-color:blue;
+}
+.content{
+    display: flex;
+    margin: auto;
+    padding: 23px;
+    width: 70vw;
+    
+}
+.con-left{
+    font-family: var(--font2);
+}
+.con-right img{
+    height: 200px;
+    border-radius: 50%;
+}
+footer{
+    bottom: 0;
+    height: 30px;
+    background-color: darkgrey;
+}
+.home-articles{
+    /* background-color:red; */
+    background-color: beige;
+    padding-top: 23px;
+    position: relative;
+    font-family: var(--font3);
+}
+.yr-box{
+    position:absolute;
+    width: 50px;
+    height: 44px;
+    right: 44px;
+}
+.yr-box input{
+    margin-top: 12px;
+}
+.article-img img{
+    border-radius: 10px;
+    margin: 24px 24px;
+    height: 250px;
+    width: 300px;
+    
+}
+.hm-article{
+    display: flex;
+
+}
+.article-text{
+    cursor: pointer;
+    align-self: center;
+}
+.article-text a{
+    text-decoration: none;
+    color: black;
+}
+.article-text a:hover{
+    text-decoration: none;
+}

@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+{% block body %}
+    <div class="content">
+        <div class="con-left">
+            <h2>{{params["tag_line"]}}</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit quidem corrupti ratione vel optio
+                aut sequi fugit natus in? Ut, deleniti deserunt! Culpa, veritatis. Aspernatur suscipit eius adipisci
+                velit consequatur.</p>
+        </div>
+        <div class="con-right">
+            <img src="{{url_for('static' ,filename='img/img1.jpg')}}" alt="">
+        </div>
+    </div>
+    <div class="m-auto max-width-1">
+        <hr>
+    </div>
+    <div class="home-articles  max-width-1 m-auto">
+        <div class="yr-box">
+            <h3>Year</h3>
+          <input type="radio" name="year" id="">{{params["yr_two"]}}
+          <input type="radio" name="year" id="">{{params["yr_one"]}}
+        </div>
+        <h2>Featured Articles</h2>
+        {% for post in posts %}
+        {%set fname='img/'+post.img_file%}
+        <div class="hm-article">
+            <div class="article-img">
+                <img src="{{url_for('static' ,filename=fname)}}" alt="1">
+            </div>
+            <div class="article-text">
+                <a href="/blog/{{post.slug}}"> <h3>{{post.title}}</h3>
+                 <div class="post-content">{{post.content[0:57]}}...</div></a> 
+                 <span>Post on {{post.date_time}}</span>
+                 <span>By {{post.author}} |10min.read</span>
+            </div>
+        </div>
+        {% endfor %}
+        <hr>
+        <a href="{{prev}}"><button class="btn btn-primary btn-sm float-left" >&larr;Previous</button></a>
+        <a href="{{next}}"><button class="btn btn-primary btn-sm float-right">Next &rarr;</button></a>
+    </div>
+{% endblock %}
+
+
+

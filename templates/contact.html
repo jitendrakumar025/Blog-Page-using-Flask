@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block body %}
+   <div class="contact-box" overflow="hidden">
+    <div class="m-auto max-width-1" >
+            <h2>Feel free to Contact Us</h2>
+            <form action="/contact" method="post">
+                <div class="form-box"><input type="text" name="name" placeholder="Enter your name"> </div>
+                <div class="form-box"><input type="email" name="email" placeholder="Enter your email"> </div>
+                <div class="form-box"><input type="text" name="phone" placeholder="Enter your phone number"> </div>
+                <div class="form-box"><textarea name="message" id="msg" cols="30" rows="10" placeholder="Type your message"></textarea> </div>
+                <div class="form-box"><button class="btns">Submit</button></div>
+            </form>
+        </div>
+   </div>
+   
+{% endblock %}

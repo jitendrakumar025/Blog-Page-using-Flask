@@ -1,0 +1,35 @@
+@media  screen and (max-width:750px) {
+    .navbar{
+        flex-direction: column;
+    }
+    .con-right{
+        display: none;
+    }
+    .article-img img{
+             height: 150px;
+             width: 200px;
+    }
+    .hm-article{
+        margin: 14px 0px;
+        flex-direction: column;
+    }
+    .yr-box{
+        right: 0;
+    }
+  
+    nav li{
+        margin-left:0;
+    }
+    .form-box input ,#msg{
+        width: 80vw;
+    }
+    .btns{
+        width: 70vw;
+    }
+    .contact-box{
+        height: 78vh;
+    }
+    .row{
+        flex-direction: column;
+    }
+}

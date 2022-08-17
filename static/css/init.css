@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&family=Roboto:ital,wght@1,300&family=Ubuntu:ital,wght@1,500&display=swap');
+.display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+:root{
+    --btn-color:rgb(45, 45, 250);
+    --font1:'Roboto', sans-serif;
+    --font2:'Baloo Bhaijaan 2', cursive;
+    --font3:'Ubuntu', sans-serif;
+}
+.m-auto{
+    margin: auto;
+}
+.max-width-1{
+    width: 85vw;
+}
+.center{
+    text-align: center;
+}
+.max-width-2{
+    width: 70vw;
+}
