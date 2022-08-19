@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block body %}
+   <div class="contact-box" overflow="hidden">
+    <div class="m-auto max-width-1" >
+            <h2>Add/edit posts</h2>
+            <form action="/edit/{{post.sno}}" method="post">
+                <div class="form-box"><input type="text" name="title" placeholder="Enter title" value="{{post.title}}"> </div>
+                <div class="form-box"><input type="text" name="slug" placeholder="Enter slug" value="{{post.slug}}"> </div>
+                <div class="form-box"><input type="text" name="author" placeholder="Enter author name" value="{{post.author}}"> </div>
+                <div class="form-box"><input type="text" name="img" placeholder="Enter image file name" value="{{post.img_file}}"> </div>
+                <div class="form-box"><textarea name="content" id="content" cols="30" rows="10" placeholder="Enter content here" value="{{post.content}}"></textarea> </div>
+                <div class="form-box"><button class="btn btn-primary">Submit</button></div>
+            </form>
+        </div>
+   </div>
+   
+{% endblock %}

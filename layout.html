@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>It's iBlogger</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='{{url_for('static' ,filename='css/main.css')}}'>
+    <link rel='stylesheet' type='text/css' media='screen' href='{{url_for('static' ,filename='css/init.css')}}'>
+    <link rel='stylesheet' type='text/css' media='screen' href='{{url_for('static' ,filename='css/mobile.css')}}'>
+    <link rel='stylesheet' type='text/css' media='screen' href='{{url_for('static' ,filename='css/blog.css')}}'>
+    <link rel='stylesheet' type='text/css' media='screen' href='{{url_for('static' ,filename='css/contact.css')}}'>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src='{{url_for('static' ,filename='main.js')}}'></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="left-nav">
+          <a href="/"> <img src="{{url_for('static' ,filename='img/blog-icon.png')}}" alt="logo here"></a> 
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="right-nav">
+            <form action="/search">
+                <input type="text" placeholder="search here" name="query">
+                <button id="search-btn">search</button>
+            </form>
+            <a href="/dashboard"><button class="btn btn-primary btn-sm">LogIn</button></a>
+        </div>
+    </nav>
+
+    {% block body %} {% endblock %}
+    <footer class="display">
+        Copyright &copy;www.iBlogger.com All right reserved!
+    </footer>
+</body>
+</html>

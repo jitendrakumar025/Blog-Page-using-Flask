@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+{% block body %}
+    {%set fname='img/'+post.img_file%}
+    <div class="art-pick">
+        <img src="{{url_for('static' ,filename=fname)}}" alt="not found">
+    </div>
+    <div class="content">
+       <h2>{{post.title}}</h2>
+       <div class="blogpost-meta max-width-2">
+        <div class="author-info">
+            <div>Posted on {{post.date_time}} | 10 min read</div>
+            <div>Author:{{params["author"]}}</div>
+        </div>
+        <div class="share">
+            <a href="http://twitter.com" target="_blank"> <i class='bx bx-sm bxl-twitter bx-tada' ></i></a>
+            <a href="http://linkedin.com" target="_blank"> <i class='bx  bx-sm bxl-linkedin'></i>
+            <a href="http://facebook.com" target="_blank"> <i class='bx bx-sm bxl-facebook'></i></a>
+        </div>
+       </div>
+       <p>{{post.content}}</p>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ad nulla iste at neque voluptas. Laborum libero accusamus in eos distinctio ex nam minima a, ab quidem sit adipisci ad incidunt autem eveniet sunt tempora tempore dolore ipsum dicta. Reiciendis cum natus beatae cumque fugiat debitis porro, ullam labore eos.</p>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ad nulla iste at neque voluptas. Laborum libero accusamus in eos distinctio ex nam minima a, ab quidem sit adipisci ad incidunt autem eveniet sunt tempora tempore dolore ipsum dicta. Reiciendis cum natus beatae cumque fugiat debitis porro, ullam labore eos.</p>
+       <p>{{post.content}}</p>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ad nulla iste at neque voluptas. Laborum libero accusamus in eos distinctio ex nam minima a, ab quidem sit adipisci ad incidunt autem eveniet sunt tempora tempore dolore ipsum dicta. Reiciendis cum natus beatae cumque fugiat debitis porro, ullam labore eos.</p>
+    </div>
+    <div class="m-auto max-width-1">
+        <hr>
+    </div>
+    <div class="home-articles  max-width-1 m-auto">
+        <h2>People also who read this...</h2>
+        <div class="row">
+        <div class="hm-article display">
+            <div class="article-img">
+                <img src="{{url_for('static' ,filename='img/img2.jpg')}}" alt="1">
+            </div>
+            <div class="article-text center">
+                <a href="/blog"> <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h3></a>
+                <span>Author name</span>
+                <span>6 january |5hr read</span>
+            </div>
+        </div>
+        <div class="hm-article display">
+            <div class="article-img">
+                <img src="{{url_for('static' ,filename='img/img3.jpg')}}" alt="1">
+            </div>
+            <div class="article-text center">
+                <a href="/blog"> <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h3></a>
+                <span>Author name</span>
+                <span>6 january |5hr read</span>
+            </div>
+        </div>
+        <div class="hm-article display">
+            <div class="article-img">
+                <img src="{{url_for('static' ,filename='img/img4.jpg')}}" alt="1">
+            </div>
+            <div class="article-text center">
+                <a href="/blog"> <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h3></a>
+                <span>Author name</span>
+                <span>6 january |5hr read</span>
+            </div>
+        </div>
+    </div>
+    </div>
+{% endblock %}
